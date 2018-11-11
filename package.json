@@ -2,8 +2,10 @@
   "name": "books-app",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:4000",
   "dependencies": {
     "react": "^16.6.1",
+    "react-bootstrap": "^0.32.4",
     "react-dom": "^16.6.1",
     "react-scripts": "1.x"
   },
