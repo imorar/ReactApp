@@ -31,7 +31,7 @@ span.btn {
   color: white !important;
   border-radius: 4px;
   font-weight: bold;
-  float: right;
+  margin-top: 15px;
 }
 
 span.btn:hover {

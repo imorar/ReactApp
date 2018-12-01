@@ -3,10 +3,12 @@ import './style.css';
 
 export class Cart extends React.Component {
     renderContent = () => {
+        if(this.props.rentedBooks.length > 0)
             return (
-                <div>
+                <div className="cart-container">
                     <span>Total: {this.props.rentedBooks.length}</span>
                     {this.renderRentedBooks()}
+                    <span className="btn" onClick={this.rent}>Rent</span>
                 </div>
             )
     }
@@ -29,10 +31,8 @@ export class Cart extends React.Component {
 
     render() {
         return (
-        <div className="cart-container">
-            {this.renderContent()}
-            <span className="btn" onClick={this.rent}>Rent</span>
-        </div>
-        )
+            <div>
+                {this.renderContent()}
+            </div>)
     }
 }
