@@ -21,5 +21,20 @@
 .app-container {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+}
+
+span.btn {
+  padding: 5px;
+  min-width: 50px;
+  background: #222;
+  color: white !important;
+  border-radius: 4px;
+  font-weight: bold;
+  float: right;
+}
+
+span.btn:hover {
+  opacity: .8;
 }
 

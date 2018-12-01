@@ -2,5 +2,6 @@
     display: flex;
     justify-content: center;
     flex-flow: wrap;
-    max-width: 1300px;
+    max-width: 90%;
+    align-self: center;
 }

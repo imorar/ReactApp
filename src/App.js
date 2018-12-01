@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import logo from "./logo.png";
 import "./App.css";
 import { BookList } from "../src/components/BookList/bookList";
+import { Cart } from "./components/Cart/cart";
+
 class App extends Component {
 	render() {
 		return (
@@ -10,7 +12,8 @@ class App extends Component {
 					<img src={logo} className="App-logo" alt="logo" />
 					<h1 className="App-title">Rent a book</h1>
 				</header>
-				<div class="app-container">
+				<div className="app-container">
+					<Cart />
 					<BookList />
 				</div>
 			</div>
