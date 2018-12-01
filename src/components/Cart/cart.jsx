@@ -12,7 +12,15 @@ export class Cart extends React.Component {
     }
 
     renderRentedBooks = () => {
-        return this.props.rentedBooks.map((rentedBook, index) => <div key={rentedBook.id}>{index + 1}. <b>{rentedBook.title}</b> - {rentedBook.author}</div>);
+        return this.props.rentedBooks.map((rentedBook, index) => 
+            <div key={rentedBook.id}>
+                {this.renderRemoveFromCartIcon(rentedBook.id)}
+                {index + 1}. <b>{rentedBook.title}</b> - {rentedBook.author}
+            </div>);
+    }
+
+    renderRemoveFromCartIcon = (id) => {
+        return <span onClick={() => this.props.removeFromCart(id)} className="remove-icon">x</span>
     }
 
     rent = () => {

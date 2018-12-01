@@ -22,7 +22,13 @@ class App extends Component {
 
 		const newCart = this.state.cart;
 		newCart.push(toBeAdded);
+		this.setState({ cart: newCart });
+	};
 
+	handleRemoveFromCart = id => {
+		this.state.books.filter(book => book.id === id)[0].rented = false;
+
+		const newCart = this.state.cart.filter(book => book.id !== id);
 		this.setState({ cart: newCart });
 	};
 
@@ -40,7 +46,11 @@ class App extends Component {
 					<h1 className="App-title">Rent a book</h1>
 				</header>
 				<div className="app-container">
-					<Cart rentedBooks={this.state.cart} handleOrder={this.submitOrder} />
+					<Cart
+						rentedBooks={this.state.cart}
+						handleOrder={this.submitOrder}
+						removeFromCart={this.handleRemoveFromCart}
+					/>
 					<BookList books={this.state.books} addToCart={this.handleAddToCart} />
 				</div>
 			</div>

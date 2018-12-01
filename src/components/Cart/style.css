@@ -11,3 +11,10 @@
     color: red;
     font-weight: bold;
 }
+
+.remove-icon {
+    color: red;
+    padding-right: 5px;
+    font-weight: 700;
+    cursor: pointer;
+}

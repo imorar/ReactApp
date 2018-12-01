@@ -3,6 +3,7 @@ export class DataService {
 
     constructor() {
         this.getData = new Promise((resolve, reject)  => {
+            // eslint-disable-next-line
             resolve([
                 {
                     id: 1,
@@ -42,6 +43,7 @@ export class DataService {
                     rented: false
                 },
                 { id: 8, title: "Moby Dick", author: "Herman Melville", rented: true }
+                // eslint-disable-next-line
             ]), 
             reject("You have an error, Huston!")
         });
