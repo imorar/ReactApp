@@ -1,0 +1,7 @@
+.book-list-container {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    max-width: 90%;
+    align-self: center;
+}

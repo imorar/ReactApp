@@ -1,0 +1,13 @@
+.cart-container {
+    border: 1px solid #d1d3d5;
+    border-radius: 5px;
+    padding: 30px;
+    display: block;
+    margin: 15px 5%;
+    text-align: left;
+}
+
+.cart-container span { 
+    color: red;
+    font-weight: bold;
+}
